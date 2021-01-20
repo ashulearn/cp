@@ -7,7 +7,7 @@ void func(int x)
     return;
 
     func(x/10);
-    int d= x%10;
+    int d= x%10; 
     if(d==0)
     {
         cout<<"zero"<<" ";

@@ -2,26 +2,22 @@
 
 using namespace std;
 
-void merge(int arr[],int s,int e)
+void bubbleSort(int a[],int n)
 {
-    int mid=(s+e)/2;
-    int i=s,j=mid;
-    int temp[e-s+1];
-    while(i<=mid && j<=e)
+    if(n==1)
     {
-        
+        return ;
     }
-}
-void mergesort(int arr[],int s,int e)
-{
-    if(s<=e)
-    return;
+    for(int i=0;i<n-1;i++)
+    {
+        if(a[i]<a[i+1])
+        {
+            swap(a[i],a[i-1]);
+        }
 
-    int mid= (s+e)/2;
-    mergesort(arr,s,mid);
-    mergesort(arr,mid+1,e);
+    }
+    bubbleSort(a,n-1);
 
-    merge(arr,s,e);
 }
 int main()
 {
