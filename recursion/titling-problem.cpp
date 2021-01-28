@@ -11,8 +11,6 @@ int tilingProblem(int x)
 
     //recursive case
     return tilingProblem(x-1)+tilingProblem(x-4);
-
-
 }
 int main()
 {
