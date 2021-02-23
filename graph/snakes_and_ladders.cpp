@@ -1,15 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 class Graph {
     map<int,list<int> > l;
     public:
     void addEdge(int x,int y)
     {
         l[x].push_back(y);
-        l[y].push_back(x);
     }
-    void bfs(int src)
+    void bfs(int src,int dest)
     {
         map<int,int> dist;
         queue<int> q;
@@ -25,7 +23,7 @@ class Graph {
         {
             int node = q.front();
             q.pop();
-            cout<<node<<" ";
+            // cout<<node<<" ";
             for(auto nbr : l[node])
             {
                 if(dist[nbr] == INT_MAX)
@@ -37,22 +35,43 @@ class Graph {
 
             }
         }
-        for(auto p : l)
-        {
-            cout<<"node "<<p.first<<"is "<<dist[p.first]<<endl;
-        }
+        // for(auto p : l)
+        // {
+        //     cout<<"node "<<p.first<<"is "<<dist[p.first]<<endl;
+        // }
         
+        cout<<dist[dest];
     }
  };
 int main()
 {
+    int board[50] = {0};
+    board[2]=13;
+    board[5]=2;
+    board[9]=18;
+    board[18]=11;
+    board[17]=-13;
+    board[20]=-14;
+    board[24]=-8;
+    board[25]=10;
+    board[32]=-2;
+    board[34]=-22;
     Graph g;
-    g.addEdge(0,1);
-    g.addEdge(0,3);
-    g.addEdge(1,2);
-    g.addEdge(2,3);
-    g.addEdge(3,4);
-    g.addEdge(4,5);
-    g.bfs(0);
+    for(int i=0;i<=36;i++)
+    {
+        for(int dice=1;dice<=6;dice++)
+        {
+            int j=i+dice;
+            j+=board[j];
+            if(j<=36)
+            {
+                g.addEdge(i,j);
+            }
+
+        }
+    }
+    g.addEdge(36,36);
+    g.bfs(0,36);
+
     return 0;
 }

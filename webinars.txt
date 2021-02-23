@@ -1,0 +1,10 @@
+recursion:: https://www.youtube.com/watch?v=j8YbQLiwv-4&feature=emb_logo
+trees :: https://www.youtube.com/watch?v=_9ZrvXxIhn8&feature=emb_logo
+graph :: https://www.youtube.com/watch?v=ocKrb6TTyqI&feature=emb_logo
+dp1 :: https://www.youtube.com/watch?v=JrLXLSLC7t4&feature=emb_logo
+dp2 :: https://www.youtube.com/watch?v=D1STlYsZ8KU&feature=emb_logo
+dp3 :: https://www.youtube.com/watch?v=DBOjCm7WJE4&feature=emb_logo
+big integers :: https://www.youtube.com/watch?v=t27W1yUrYmM&feature=emb_logo
+constructiove algo :: https://www.youtube.com/watch?v=V_YBVax3yvk&feature=emb_logo
+number theory :: https://www.youtube.com/watch?v=vPum8EqmFz0&feature=emb_logo
+avl trees :: https://www.youtube.com/watch?v=a96JFhw5Ee4&feature=emb_logo
